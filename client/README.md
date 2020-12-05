@@ -10,6 +10,6 @@ You will also see any lint errors in the console.
 
 ### `npm install` 
 
-Installs any missing dependencies.
+To install any missing dependencies.
 
  
