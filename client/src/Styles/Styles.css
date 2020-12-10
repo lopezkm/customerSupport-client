@@ -1,0 +1,57 @@
+.sidebar-first-column {
+    background-color: #4699A7;
+    width: 3.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-open-menu {
+    color: white;
+    padding-top: 1rem;
+    font-size: 2.5rem;
+}
+
+.sidebar-bottom-icons {
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.sidebar-second-column {
+    background-color: #8044A2;
+    width: 14rem;
+}
+
+.inbox-title {
+    padding: 1.2rem;
+    color: white;
+    font-weight: bold;
+}
+
+.search-bar {
+    padding: 0 1rem 0 1rem;
+}
+
+.contact-picture {
+    background-color: lightgrey;
+    width: 2rem;
+    height: 2rem;
+}
+
+.small-status {
+    font-size: 0.6rem;
+    color: #35E8C3;
+}
+
+.small-icon {
+    font-size: 0.3rem;
+    color: #35E8C3;
+}
+
+.chat-color {
+    background-color: #35E8C3;
+}
+
+.button-send {
+    background-color: #35E8C3 !important;
+    border:none !important;
+}
