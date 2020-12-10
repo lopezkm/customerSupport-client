@@ -7,6 +7,7 @@ import NewConversationModal from './NewConversationModal'
 import '../Styles/Styles.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faCog, faPowerOff, faSearch, faTasks, faUser, faUserFriends } from '@fortawesome/free-solid-svg-icons';
+import { faEdit } from '@fortawesome/free-regular-svg-icons'
 
 const CONVERSATIONS_KEY = 'conversations'
 const CONTACTS_KEY = 'contacts'
@@ -73,20 +74,154 @@ export default function Sidebar({ id }) {
               label=""
             />
         </div>
-        <div className=" mx-3 p-1 rounded div-under-convesation-and-teammates">
-          compañeros?
+        <div className="mx-3 p-1 rounded div-under-convesation-and-teammates">
+          <div className="px-2 pt-2 pb-1 d-flex justify-content-between align-items-end">
+            <div className="d-flex align-items-end">
+              <div className="contact-picture-teammates rounded"></div>
+              <div className="ml-2 small text-white">Cole Rise</div>
+            </div>
+            <span className="span-teammates">2m ago</span>
+          </div>
+          <div className="px-2 pt-2 pb-1 d-flex justify-content-between align-items-end">
+            <div className="d-flex align-items-end">
+              <div className="contact-picture-teammates rounded"></div>
+              <div className="ml-2 small text-white">Cole Rise</div>
+            </div>
+            <span className="span-teammates">2m ago</span>
+          </div>
+          <div className="px-2 pt-2 pb-1 d-flex justify-content-between align-items-end">
+            <div className="d-flex align-items-end">
+              <div className="contact-picture-teammates rounded"></div>
+              <div className="ml-2 small text-white">Cole Rise</div>
+            </div>
+            <span className="span-teammates">2m ago</span>
+          </div>
+          <div className="px-2 pt-2 pb-1 d-flex justify-content-between align-items-end">
+            <div className="d-flex align-items-end">
+              <div className="contact-picture-teammates rounded"></div>
+              <div className="ml-2 small text-white">Cole Rise</div>
+            </div>
+            <span className="span-teammates">2m ago</span>
+          </div>
+          <div className="px-2 pt-2 pb-1 d-flex justify-content-between align-items-end">
+            <div className="d-flex align-items-end">
+              <div className="contact-picture-teammates rounded"></div>
+              <div className="ml-2 small text-white">Cole Rise</div>
+            </div>
+            <span className="span-teammates">2m ago</span>
+          </div>
+          <div className="px-2 pt-2 pb-1 d-flex justify-content-between align-items-end">
+            <div className="d-flex align-items-end">
+              <div className="contact-picture-teammates rounded"></div>
+              <div className="ml-2 small text-white">Cole Rise</div>
+            </div>
+            <span className="span-teammates">2m ago</span>
+          </div>
+          <div className="px-2 pt-2 pb-2 d-flex justify-content-between align-items-end">
+            <div className="d-flex align-items-end">
+              <div className="contact-picture-teammates rounded"></div>
+              <div className="ml-2 small text-white">Cole Rise</div>
+            </div>
+            <span className="span-teammates">2m ago</span>
+          </div>
         </div>
       </div>
-      <div style={{ width: '250px' }} className="d-flex flex-column">
-        <div className="d-flex justify-content-between p-4 align-items-center border-bottom">
-          <span className="span-you">You</span>
+      <div style={{ width: '16.5rem' }} className="d-flex flex-column border-right">
+        <div className="d-flex justify-content-between p-3 align-items-center border-bottom">
+          <span className="span-you pt-1 pl-2">You</span>
           <Form.Switch
             type="switch"
             id="switch-you"
             label=""
           />
         </div>
-        <Tab.Container activeKey={activeKey} onSelect={setActiveKey}>
+        <div className="border-bottom py-3 px-2">
+          <div className="d-flex justify-content-between align-items-center px-3 pb-3">
+            <span className="span-message font-weight-bold">Messages</span>
+            <FontAwesomeIcon icon={faEdit} className="span-message-icon"/>
+          </div>
+          <Form>
+            <InputGroup className="mb-2 px-3">
+              <InputGroup.Prepend >
+                <Button className="button-search-message">
+                  <FontAwesomeIcon icon={faSearch} className="search-icon-message" />
+                </Button>
+              </InputGroup.Prepend>
+              <FormControl className="input-search-message text-black" id="inlineFormInputGroupMessage" placeholder="Search"/>
+            </InputGroup>
+          </Form>
+        </div>
+        <div className= "px-3 py-2 border-bottom">
+           <div className="pr-2 pb-1 d-flex justify-content-between align-items-start">
+            <div className="d-flex align-items-start">
+              <div className="contact-picture-messages rounded mt-2 ml-2"></div>
+              <div className="d-flex flex-column align-items-start mt-0">
+                <div className="ml-2 text-black">Selena Mike</div>
+                <span className="ml-2 span-messages-text">
+                  Lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum
+                </span>
+              </div>
+            </div>
+            <span className="span-messages pt-1">5m ago</span>
+          </div>
+        </div>
+        <div className= "px-3 py-2 border-bottom">
+           <div className="pr-2 pb-1 d-flex justify-content-between align-items-start">
+            <div className="d-flex align-items-start">
+              <div className="contact-picture-messages rounded mt-2 ml-2"></div>
+              <div className="d-flex flex-column align-items-start mt-0">
+                <div className="ml-2 text-black">Lisa Westfall</div>
+                <span className="ml-2 span-messages-text">
+                  Lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum
+                </span>
+              </div>
+            </div>
+            <span className="span-messages pt-1">5m ago</span>
+          </div>
+        </div>
+        <div className= "px-3 py-2 border-bottom">
+           <div className="pr-2 pb-1 d-flex justify-content-between align-items-start">
+            <div className="d-flex align-items-start">
+              <div className="contact-picture-messages rounded mt-2 ml-2"></div>
+              <div className="d-flex flex-column align-items-start mt-0">
+                <div className="ml-2 text-black">Jhon Doe</div>
+                <span className="ml-2 span-messages-text">
+                  Lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum
+                </span>
+              </div>
+            </div>
+            <span className="span-messages pt-1">5m ago</span>
+          </div>
+        </div>
+        <div className= "px-3 py-2 border-bottom">
+           <div className="pr-2 pb-1 d-flex justify-content-between align-items-start">
+            <div className="d-flex align-items-start">
+              <div className="contact-picture-messages rounded mt-2 ml-2"></div>
+              <div className="d-flex flex-column align-items-start mt-0">
+                <div className="ml-2 text-black">Lucifer Charls</div>
+                <span className="ml-2 span-messages-text">
+                  Lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum
+                </span>
+              </div>
+            </div>
+            <span className="span-messages pt-1">5m ago</span>
+          </div>
+        </div>
+        <div className= "px-3 py-2 border-bottom">
+           <div className="pr-2 pb-1 d-flex justify-content-between align-items-start">
+            <div className="d-flex align-items-start">
+              <div className="contact-picture-messages rounded mt-2 ml-2"></div>
+              <div className="d-flex flex-column align-items-start mt-0">
+                <div className="ml-2 text-black">Ariana Miwex</div>
+                <span className="ml-2 span-messages-text">
+                  Lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum
+                </span>
+              </div>
+            </div>
+            <span className="span-messages pt-1">5m ago</span>
+          </div>
+        </div>
+       {/*  <Tab.Container activeKey={activeKey} onSelect={setActiveKey}>
           <Nav variant="tabs" className="justify-content-center">
             <Nav.Item>
               <Nav.Link eventKey={CONVERSATIONS_KEY}>Conversations</Nav.Link>
@@ -116,7 +251,7 @@ export default function Sidebar({ id }) {
             <NewConversationModal closeModal={closeModal} /> :
             <NewContactModal closeModal={closeModal} />
           }
-        </Modal>
+        </Modal> */}
       </div>
     </div>
   )

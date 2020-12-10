@@ -25,8 +25,8 @@ export default function OpenConversation() {
   }
 
   return (
-    <div className="d-flex flex-column flex-grow-1 border-left">
-      <div className="d-flex justify-content-end p-4 align-items-center border-bottom border-left">
+    <div className="d-flex flex-column flex-grow-1">
+      <div className="d-flex justify-content-end p-3 align-items-center border-bottom">
         <div className="d-flex justify-content-between">
           <FontAwesomeIcon icon={faStopwatch} className="mr-3"/>
           <FontAwesomeIcon icon={faPhoneAlt} className="mr-3"/>
@@ -41,7 +41,7 @@ export default function OpenConversation() {
             <div className="small font-weight-bold">Lisa Westfall</div>
             <div className="small-status d-flex align-items-center">
               <FontAwesomeIcon icon={faCircle} className="small-icon mr-1"/>
-              <span> Active Now</span>
+              <span>Active Now</span>
             </div>
           </div>
         </div>

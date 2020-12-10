@@ -5,6 +5,7 @@
     width: 3.5rem;
     align-items: center;
     justify-content: space-between;
+    max-height: min-content;
 }
 
 .navbar-open-menu {
@@ -21,6 +22,7 @@
 .sidebar-second-column {
     background-color: #8044A2;
     width: 14rem;
+    max-height: min-content;
 }
 
 .inbox-title {
@@ -47,6 +49,34 @@
     color: #35E8C3;
 }
 
+.span-message {
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.span-message-icon {
+    font-size: 1.5rem;
+}
+
+
+.button-search-message {
+    background-color: lightgray !important;
+    border-color: lightgray !important ;
+}
+
+.input-search-message {
+    background-color: lightgray !important;
+    border-color: lightgray !important ;
+}
+
+#inlineFormInputGroupMessage::placeholder {
+    color: gray;
+}
+
+.search-icon-message {
+    color: gray;
+}
+
 .conversation-and-teammates-title {
     padding-left: 1.2rem;
     color: #35E8C3;
@@ -55,12 +85,40 @@
 
 .div-under-convesation-and-teammates {
     background-color: #4699A7;
-    color: #35E8C3 ;
 }
 
 .conversation-icon {
     color: white;
 }
+
+.contact-picture-teammates {
+    width: 2rem;
+    height: 2rem;
+    background-color: white;
+}
+
+.span-teammates {
+    font-size: 0.6rem;
+    color: white;
+}
+
+.contact-picture-messages {
+    width: 3rem;
+    height: 3rem;
+    background-color: lightgray;
+}
+
+.span-messages {
+    font-size: 0.6rem;
+    color: black;
+}
+
+.span-messages-text {
+    font-size: 0.4rem;
+    color: lightgray;
+    max-width: 7.5rem;
+}
+
 
 .span-you {
     height: 2rem;
