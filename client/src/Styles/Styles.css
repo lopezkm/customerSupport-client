@@ -1,3 +1,5 @@
+/* side-bar styles */
+
 .sidebar-first-column {
     background-color: #4699A7;
     width: 3.5rem;
@@ -27,9 +29,44 @@
     font-weight: bold;
 }
 
-.search-bar {
-    padding: 0 1rem 0 1rem;
+.button-search {
+    background-color: #4699A7 !important;
+    border-color: #4699A7 !important ;
 }
+
+.input-search{
+    background-color: #4699A7 !important;
+    border-color: #4699A7 !important ;
+}
+
+#inlineFormInputGroup::placeholder {
+    color: white;
+}
+
+.search-icon {
+    color: #35E8C3;
+}
+
+.conversation-and-teammates-title {
+    padding-left: 1.2rem;
+    color: #35E8C3;
+    font-weight: bold;
+}
+
+.div-under-convesation-and-teammates {
+    background-color: #4699A7;
+    color: #35E8C3 ;
+}
+
+.conversation-icon {
+    color: white;
+}
+
+.span-you {
+    height: 2rem;
+}
+
+/* open-conversation styles */
 
 .contact-picture {
     background-color: lightgrey;
@@ -47,11 +84,21 @@
     color: #35E8C3;
 }
 
-.chat-color {
+.chat-color-me {
     background-color: #35E8C3;
+}
+
+.chat-color-sender {
+    background-color: lightgrey;
 }
 
 .button-send {
     background-color: #35E8C3 !important;
     border:none !important;
+}
+
+.button-click-and-mic {
+    background-color: rgb(231, 230, 230) !important;
+    border:rgb(231, 230, 230)!important;
+    color: gray !important;
 }

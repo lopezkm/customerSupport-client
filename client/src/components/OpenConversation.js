@@ -25,30 +25,30 @@ export default function OpenConversation() {
   }
 
   return (
-    <div className="d-flex flex-column flex-grow-1">
+    <div className="d-flex flex-column flex-grow-1 border-left">
       <div className="d-flex justify-content-end p-4 align-items-center border-bottom border-left">
         <div className="d-flex justify-content-between">
           <FontAwesomeIcon icon={faStopwatch} className="mr-3"/>
           <FontAwesomeIcon icon={faPhoneAlt} className="mr-3"/>
         </div>
-        <div className="contact-picture mr-2"></div>
+        <div className="contact-picture mr-2 rounded"></div>
         <div>Jessica Grill</div>
       </div>
-      <div className="p-2 mr-2 ml-2 border-bottom d-flex flex-row justify-content-between align-items-center">
+      <div className="py-3 mx-4 border-bottom d-flex flex-row justify-content-between align-items-center">
         <div className="d-flex flex-row align-items-center">
-          <div className="contact-picture mr-2"></div>
+          <div className="contact-picture mr-2 rounded"></div>
           <div>
             <div className="small font-weight-bold">Lisa Westfall</div>
-              <div className="small-status d-flex align-items-center">
-                <FontAwesomeIcon icon={faCircle} className="small-icon mr-1"/>
-                <span> Active Now</span>
-              </div>
+            <div className="small-status d-flex align-items-center">
+              <FontAwesomeIcon icon={faCircle} className="small-icon mr-1"/>
+              <span> Active Now</span>
+            </div>
           </div>
         </div>
-        <FontAwesomeIcon icon={faEllipsisV} className="mr-3"/>
+        <FontAwesomeIcon icon={faEllipsisV}/>
       </div>
       <div className="flex-grow-1 overflow-auto">
-        <div className="d-flex flex-column align-items-start justify-content-end px-3">
+        <div className="d-flex flex-column align-items-start justify-content-end px-4 pt-3">
           {selectedConversation.messages.map((message, index) => {
             const lastMessage = selectedConversation.messages.length - 1 === index
             console.log('mensaaajeeeee', message)
@@ -59,7 +59,7 @@ export default function OpenConversation() {
                 className={`my-1 d-flex flex-column ${message.fromMe ? 'align-self-end align-items-end' : 'align-items-start'}`}
               >
                 <div
-                  className={`rounded px-2 py-1 ${message.fromMe ? 'chat-color text-black' : 'border'}`}>
+                  className={`rounded px-2 py-1 ${message.fromMe ? 'chat-color-me text-black' : 'chat-color-sender'}`}>
                   {message.text}
                 </div>
                 <div className={`text-muted small ${message.fromMe ? 'text-right' : ''}`}>
@@ -74,7 +74,7 @@ export default function OpenConversation() {
         <Form.Group className="m-2">
           <InputGroup>
             <InputGroup.Prepend >
-              <InputGroup.Text>
+              <InputGroup.Text className="button-click-and-mic">
                 <FontAwesomeIcon icon={faGrinTongueWink} />
               </InputGroup.Text>
             </InputGroup.Prepend>
@@ -87,14 +87,14 @@ export default function OpenConversation() {
               placeholder="Enter your message here..."
             />
             <InputGroup.Append >
-              <InputGroup.Text>
+              <Button className="button-click-and-mic">
                 <FontAwesomeIcon icon={faMicrophone} />
-              </InputGroup.Text>
+              </Button>
             </InputGroup.Append>
             <InputGroup.Append >
-              <InputGroup.Text className="rounded-right">
+              <Button className="rounded-right button-click-and-mic">
                 <FontAwesomeIcon icon={faPaperclip} />
-              </InputGroup.Text>
+              </Button>
             </InputGroup.Append>
             <Button className="button-send ml-2" type="submit">
               <FontAwesomeIcon icon={faPaperPlane} />

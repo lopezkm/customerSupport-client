@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
-import { Tab, Nav, Button, Modal, Form, InputGroup, FormControl } from 'react-bootstrap'
+import { Tab, Nav, Button, Modal, Form, InputGroup, FormControl, FormGroup } from 'react-bootstrap'
 import Conversations from './Conversations'
 import Contacts from './Contacts'
 import NewContactModal from './NewContactModal'
 import NewConversationModal from './NewConversationModal'
 import '../Styles/Styles.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faCog, faPowerOff, faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faCog, faPowerOff, faSearch, faTasks, faUser, faUserFriends } from '@fortawesome/free-solid-svg-icons';
 
 const CONVERSATIONS_KEY = 'conversations'
 const CONTACTS_KEY = 'contacts'
@@ -30,19 +30,62 @@ export default function Sidebar({ id }) {
         </div>
       </div>
       <div className="d-flex flex-column sidebar-second-column">
-        <span className="inbox-title" >Inbox</span>
+        <span className="inbox-title">Inbox</span>
         <Form>
-          <InputGroup className="mb-2 search-bar">
+          <InputGroup className="mb-2 px-3">
             <InputGroup.Prepend >
-              <InputGroup.Text>
-                <FontAwesomeIcon icon={faSearch} />
-              </InputGroup.Text>
+              <Button className="button-search">
+                <FontAwesomeIcon icon={faSearch} className="search-icon" />
+              </Button>
             </InputGroup.Prepend>
-            <FormControl id="inlineFormInputGroup" placeholder="Search"/>
+            <FormControl className="input-search text-white" id="inlineFormInputGroup" placeholder="Search"/>
           </InputGroup>
         </Form>
+        <span className="conversation-and-teammates-title pt-4 pb-2">Conversation</span>
+        <div className="mx-3 p-1 rounded div-under-convesation-and-teammates">
+          <div className="pl-2 pr-1 py-1 d-flex justify-content-between align-items-center">
+            <div className="d-flex align-items-center">
+              <FontAwesomeIcon icon={faUser} className="conversation-icon"/>
+              <div className="ml-2 small text-white">You</div>
+            </div>
+            <Form.Check type="checkbox" label="" />
+          </div>
+          <div className="pl-2 pr-1 py-1 d-flex justify-content-between align-items-center">
+            <div className="d-flex align-items-center">
+              <FontAwesomeIcon icon={faTasks} className="conversation-icon"/>
+              <div className="ml-2 small text-white">Unassigned</div>
+            </div>
+            <Form.Check type="checkbox" label="" />
+          </div>
+          <div className="pl-2 pr-1 py-1 d-flex justify-content-between align-items-center">
+            <div className="d-flex align-items-center">
+              <FontAwesomeIcon icon={faUserFriends} className="conversation-icon" />
+              <div className="ml-2 small text-white">All</div>
+            </div>
+            <Form.Check type="checkbox" label="" />
+          </div>
+        </div>
+        <div className="d-flex justify-content-between align-items-end pt-4 pb-2">
+          <span className="conversation-and-teammates-title">Teammates</span>
+          <Form.Switch className="pr-3"
+              type="switch"
+              id="switch-teammates"
+              label=""
+            />
+        </div>
+        <div className=" mx-3 p-1 rounded div-under-convesation-and-teammates">
+          compañeros?
+        </div>
       </div>
       <div style={{ width: '250px' }} className="d-flex flex-column">
+        <div className="d-flex justify-content-between p-4 align-items-center border-bottom">
+          <span className="span-you">You</span>
+          <Form.Switch
+            type="switch"
+            id="switch-you"
+            label=""
+          />
+        </div>
         <Tab.Container activeKey={activeKey} onSelect={setActiveKey}>
           <Nav variant="tabs" className="justify-content-center">
             <Nav.Item>
