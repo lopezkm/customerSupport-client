@@ -5,7 +5,6 @@
     width: 3.5rem;
     align-items: center;
     justify-content: space-between;
-    max-height: min-content;
 }
 
 .navbar-open-menu {
@@ -22,7 +21,6 @@
 .sidebar-second-column {
     background-color: #8044A2;
     width: 14rem;
-    max-height: min-content;
 }
 
 .inbox-title {

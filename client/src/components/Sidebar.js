@@ -74,7 +74,7 @@ export default function Sidebar({ id }) {
               label=""
             />
         </div>
-        <div className="mx-3 p-1 rounded div-under-convesation-and-teammates">
+        <div className="mx-3 mb-3 p-1 rounded div-under-convesation-and-teammates">
           <div className="px-2 pt-2 pb-1 d-flex justify-content-between align-items-end">
             <div className="d-flex align-items-end">
               <div className="contact-picture-teammates rounded"></div>
