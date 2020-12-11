@@ -87,12 +87,12 @@ export default function OpenConversation() {
               placeholder="Enter your message here..."
             />
             <InputGroup.Append >
-              <Button className="button-click-and-mic">
+              <Button className="button-clip-and-mic">
                 <FontAwesomeIcon icon={faMicrophone} />
               </Button>
             </InputGroup.Append>
             <InputGroup.Append >
-              <Button className="rounded-right button-click-and-mic">
+              <Button className="rounded-right button-clip-and-mic">
                 <FontAwesomeIcon icon={faPaperclip} />
               </Button>
             </InputGroup.Append>

@@ -136,9 +136,11 @@ export default function Sidebar({ id }) {
           />
         </div>
         <div className="border-bottom py-3 px-2">
-          <div className="d-flex justify-content-between align-items-center px-3 pb-3">
+          <div className="d-flex justify-content-between align-items-center pl-3 pr-1 pb-3">
             <span className="span-message font-weight-bold">Messages</span>
-            <FontAwesomeIcon icon={faEdit} className="span-message-icon"/>
+            <Button onClick={() => setModalOpen(true)} className="rounded button-edit">
+              <FontAwesomeIcon icon={faEdit} className="span-message-icon"/>
+            </Button>
           </div>
           <Form>
             <InputGroup className="mb-2 px-3">
@@ -221,7 +223,7 @@ export default function Sidebar({ id }) {
             <span className="span-messages pt-1">5m ago</span>
           </div>
         </div>
-       {/*  <Tab.Container activeKey={activeKey} onSelect={setActiveKey}>
+        {/* <Tab.Container activeKey={activeKey} onSelect={setActiveKey}>
           <Nav variant="tabs" className="justify-content-center">
             <Nav.Item>
               <Nav.Link eventKey={CONVERSATIONS_KEY}>Conversations</Nav.Link>
@@ -244,14 +246,14 @@ export default function Sidebar({ id }) {
           <Button onClick={() => setModalOpen(true)} className="rounded-0">
             New {conversationsOpen ? 'Conversation' : 'Contact'}
           </Button>
-        </Tab.Container>
+        </Tab.Container>*/}
 
         <Modal show={modalOpen} onHide={closeModal}>
           {conversationsOpen ?
             <NewConversationModal closeModal={closeModal} /> :
             <NewContactModal closeModal={closeModal} />
           }
-        </Modal> */}
+        </Modal> 
       </div>
     </div>
   )

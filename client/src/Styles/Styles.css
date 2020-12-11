@@ -56,6 +56,11 @@
     font-size: 1.5rem;
 }
 
+.button-edit {
+    background-color: white !important;
+    border:white!important;
+    color: black !important;
+}
 
 .button-search-message {
     background-color: lightgray !important;
@@ -153,7 +158,7 @@
     border:none !important;
 }
 
-.button-click-and-mic {
+.button-clip-and-mic {
     background-color: rgb(231, 230, 230) !important;
     border:rgb(231, 230, 230)!important;
     color: gray !important;
