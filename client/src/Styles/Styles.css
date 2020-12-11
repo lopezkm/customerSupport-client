@@ -19,7 +19,7 @@
 }
 
 .sidebar-second-column {
-    background-color: #8044A2;
+    background-color: #2B2425;
     width: 14rem;
 }
 
@@ -34,9 +34,17 @@
     border-color: #4699A7 !important ;
 }
 
+.button-search:focus {
+    box-shadow: none !important;
+}
+
 .input-search{
     background-color: #4699A7 !important;
     border-color: #4699A7 !important ;
+}
+
+.input-search:focus {
+    box-shadow: none !important;
 }
 
 #inlineFormInputGroup::placeholder {
@@ -44,7 +52,7 @@
 }
 
 .search-icon {
-    color: #35E8C3;
+    color: white;
 }
 
 .span-message {
@@ -62,14 +70,26 @@
     color: black !important;
 }
 
+.button-edit:focus {
+    box-shadow: none !important;
+}
+
 .button-search-message {
     background-color: lightgray !important;
     border-color: lightgray !important ;
 }
 
+.button-search-message:focus {
+    box-shadow: none !important;
+}
+
 .input-search-message {
     background-color: lightgray !important;
     border-color: lightgray !important ;
+}
+
+.input-search-message:focus {
+    box-shadow: none !important;
 }
 
 #inlineFormInputGroupMessage::placeholder {
@@ -82,7 +102,7 @@
 
 .conversation-and-teammates-title {
     padding-left: 1.2rem;
-    color: #35E8C3;
+    color: white;
     font-weight: bold;
 }
 
@@ -122,7 +142,6 @@
     max-width: 7.5rem;
 }
 
-
 .span-you {
     height: 2rem;
 }
@@ -137,16 +156,16 @@
 
 .small-status {
     font-size: 0.6rem;
-    color: #35E8C3;
+    color:  #8044A2;
 }
 
 .small-icon {
     font-size: 0.3rem;
-    color: #35E8C3;
+    color:  #8044A2;
 }
 
 .chat-color-me {
-    background-color: #35E8C3;
+    background-color:#8044A2;
 }
 
 .chat-color-sender {
@@ -154,12 +173,25 @@
 }
 
 .button-send {
-    background-color: #35E8C3 !important;
+    background-color: #8044A2 !important;
     border:none !important;
+}
+
+.button-send:focus {
+    box-shadow: none !important;
 }
 
 .button-clip-and-mic {
     background-color: rgb(231, 230, 230) !important;
-    border:rgb(231, 230, 230)!important;
+    border:1px solid rgb(216, 213, 213) !important;
     color: gray !important;
+}
+
+.button-clip-and-mic:focus {
+    box-shadow: none !important;
+}
+
+.input-enter-message:focus {
+    box-shadow: none !important;
+    border: 1px solid  rgb(216, 213, 213) !important;
 }

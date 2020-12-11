@@ -50,8 +50,7 @@ export default function OpenConversation() {
       <div className="flex-grow-1 overflow-auto">
         <div className="d-flex flex-column align-items-start justify-content-end px-4 pt-3">
           {selectedConversation.messages.map((message, index) => {
-            const lastMessage = selectedConversation.messages.length - 1 === index
-            console.log('mensaaajeeeee', message)
+            const lastMessage = selectedConversation.messages.length - 1 === index;
             return (
               <div
                 ref={lastMessage ? setRef : null}
@@ -59,7 +58,7 @@ export default function OpenConversation() {
                 className={`my-1 d-flex flex-column ${message.fromMe ? 'align-self-end align-items-end' : 'align-items-start'}`}
               >
                 <div
-                  className={`rounded px-2 py-1 ${message.fromMe ? 'chat-color-me text-black' : 'chat-color-sender'}`}>
+                  className={`rounded px-2 py-1 ${message.fromMe ? 'chat-color-me text-white' : 'chat-color-sender'}`}>
                   {message.text}
                 </div>
                 <div className={`text-muted small ${message.fromMe ? 'text-right' : ''}`}>
@@ -74,11 +73,11 @@ export default function OpenConversation() {
         <Form.Group className="m-2">
           <InputGroup>
             <InputGroup.Prepend >
-              <InputGroup.Text className="button-click-and-mic">
+              <Button className="button-clip-and-mic">
                 <FontAwesomeIcon icon={faGrinTongueWink} />
-              </InputGroup.Text>
+              </Button>
             </InputGroup.Prepend>
-            <Form.Control
+            <Form.Control className="input-enter-message"
               as="textarea"
               required
               value={text}

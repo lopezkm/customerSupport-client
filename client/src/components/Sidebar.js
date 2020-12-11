@@ -253,7 +253,7 @@ export default function Sidebar({ id }) {
             <NewConversationModal closeModal={closeModal} /> :
             <NewContactModal closeModal={closeModal} />
           }
-        </Modal> 
+        </Modal>
       </div>
     </div>
   )
