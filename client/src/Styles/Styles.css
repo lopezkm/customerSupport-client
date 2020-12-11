@@ -38,7 +38,7 @@
     box-shadow: none !important;
 }
 
-.input-search{
+.input-search {
     background-color: #4699A7 !important;
     border-color: #4699A7 !important ;
 }
@@ -71,6 +71,20 @@
 }
 
 .button-edit:focus {
+    box-shadow: none !important;
+}
+
+.add-contact-icon {
+    font-size: 1.5rem;
+}
+
+.button-add-contact {
+    background-color: white !important;
+    border:white!important;
+    color: #4699A7!important;
+}
+
+.button-add-contact:focus {
     box-shadow: none !important;
 }
 
@@ -194,4 +208,15 @@
 .input-enter-message:focus {
     box-shadow: none !important;
     border: 1px solid  rgb(216, 213, 213) !important;
+}
+
+/* new-conversation-modal styles */
+
+.button-create-conversation {
+    background-color: #4699A7!important;
+    border:#4699A7!important;
+}
+
+.button-create-conversation:focus {
+    box-shadow: none !important;
 }
