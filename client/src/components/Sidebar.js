@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import { Tab, Nav, Button, Modal, Form, InputGroup, FormControl, FormGroup } from 'react-bootstrap';
 import Conversations from './Conversations';
-import Contacts from './Contacts';
 import NewContactModal from './NewContactModal';
 import NewConversationModal from './NewConversationModal';
-import '../Styles/Styles.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faCog, faPowerOff, faSearch, faTasks, faUser, faUserFriends, faPlusCircle } from '@fortawesome/free-solid-svg-icons';
 import { faEdit } from '@fortawesome/free-regular-svg-icons';
+import '../Styles/Styles.css';
 
 const CONVERSATIONS_KEY = 'conversations'
 const CONTACTS_KEY = 'contacts'
@@ -126,7 +125,7 @@ export default function Sidebar({ id }) {
           </div>
         </div>
       </div>
-      <div style={{ width: '16.5rem' }} className="d-flex flex-column border-right">
+      <div style={{ width: '16.5rem', height: '97vh' }} className="d-flex flex-column border-right">
         <div className="d-flex justify-content-between p-3 align-items-center border-bottom">
           <span className="span-you pt-1 pl-2">You</span>
           <Form.Switch
@@ -135,124 +134,51 @@ export default function Sidebar({ id }) {
             label=""
           />
         </div>
-        <div className="border-bottom py-3 px-2">
-          <div activeKey={activeKey} onSelect={setActiveKey} className="d-flex justify-content-between align-items-center pl-3 pr-1 pb-3">
-            <span className="span-message font-weight-bold">Messages</span>
-            <Button eventKey={CONVERSATIONS_KEY} onClick={() => setModalOpen(true)} className="rounded button-edit pl-5">
-              <FontAwesomeIcon icon={faEdit} className="span-message-icon"/>
-            </Button>
-            <Button eventKey={CONTACTS_KEY} onClick={() => setModalOpen(true)} className="button-add-contact pt-2 pl-0">
-              <FontAwesomeIcon icon={faPlusCircle} className="add-contact-icon"/>
-            </Button>
-          </div>
-          <Form>
-            <InputGroup className="mb-2 px-3">
-              <InputGroup.Prepend >
-                <Button className="button-search-message">
-                  <FontAwesomeIcon icon={faSearch} className="search-icon-message" />
-                </Button>
-              </InputGroup.Prepend>
-              <FormControl className="input-search-message text-black" id="inlineFormInputGroupMessage" placeholder="Search"/>
-            </InputGroup>
-          </Form>
-        </div>
-        <div className="overflow-auto">
-          <div className= "px-3 py-2 border-bottom">
-            <div className="pr-2 pb-1 d-flex justify-content-between align-items-start">
-              <div className="d-flex align-items-start">
-                <div className="contact-picture-messages rounded mt-2 ml-2"></div>
-                <div className="d-flex flex-column align-items-start mt-0">
-                  <div className="ml-2 text-black">Selena Mike</div>
-                  <span className="ml-2 span-messages-text">
-                    Lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum
-                  </span>
-                </div>
-              </div>
-              <span className="span-messages pt-1">5m ago</span>
-            </div>
-          </div>
-          <div className= "px-3 py-2 border-bottom">
-            <div className="pr-2 pb-1 d-flex justify-content-between align-items-start">
-              <div className="d-flex align-items-start">
-                <div className="contact-picture-messages rounded mt-2 ml-2"></div>
-                <div className="d-flex flex-column align-items-start mt-0">
-                  <div className="ml-2 text-black">Lisa Westfall</div>
-                  <span className="ml-2 span-messages-text">
-                    Lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum
-                  </span>
-                </div>
-              </div>
-              <span className="span-messages pt-1">5m ago</span>
-            </div>
-          </div>
-          <div className= "px-3 py-2 border-bottom">
-            <div className="pr-2 pb-1 d-flex justify-content-between align-items-start">
-              <div className="d-flex align-items-start">
-                <div className="contact-picture-messages rounded mt-2 ml-2"></div>
-                <div className="d-flex flex-column align-items-start mt-0">
-                  <div className="ml-2 text-black">Jhon Doe</div>
-                  <span className="ml-2 span-messages-text">
-                    Lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum
-                  </span>
-                </div>
-              </div>
-              <span className="span-messages pt-1">5m ago</span>
-            </div>
-          </div>
-          <div className= "px-3 py-2 border-bottom">
-            <div className="pr-2 pb-1 d-flex justify-content-between align-items-start">
-              <div className="d-flex align-items-start">
-                <div className="contact-picture-messages rounded mt-2 ml-2"></div>
-                <div className="d-flex flex-column align-items-start mt-0">
-                  <div className="ml-2 text-black">Lucifer Charls</div>
-                  <span className="ml-2 span-messages-text">
-                    Lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum
-                  </span>
-                </div>
-              </div>
-              <span className="span-messages pt-1">5m ago</span>
-            </div>
-          </div>
-          <div className= "px-3 py-2 border-bottom">
-            <div className="pr-2 pb-1 d-flex justify-content-between align-items-start">
-              <div className="d-flex align-items-start">
-                <div className="contact-picture-messages rounded mt-2 ml-2"></div>
-                <div className="d-flex flex-column align-items-start mt-0">
-                  <div className="ml-2 text-black">Ariana Miwex</div>
-                  <span className="ml-2 span-messages-text">
-                    Lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum
-                  </span>
-                </div>
-              </div>
-              <span className="span-messages pt-1">5m ago</span>
-            </div>
-          </div>
-        </div>
-        {/* <Tab.Container activeKey={activeKey} onSelect={setActiveKey}>
-          <Nav variant="tabs" className="justify-content-center">
-            <Nav.Item>
-              <Nav.Link eventKey={CONVERSATIONS_KEY}>Conversations</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link eventKey={CONTACTS_KEY}>Contacts</Nav.Link>
-            </Nav.Item>
-          </Nav>
+        {/* 
           <Tab.Content className="border-right overflow-auto flex-grow-1">
-            <Tab.Pane eventKey={CONVERSATIONS_KEY}>
-              <Conversations />
-            </Tab.Pane>
             <Tab.Pane eventKey={CONTACTS_KEY}>
               <Contacts />
             </Tab.Pane>
           </Tab.Content>
           <div className="p-2 border-top border-right small">
             Your Id: <span className="text-muted">{id}</span>
+          </div>*/}
+        <Tab.Container activeKey={activeKey} onSelect={setActiveKey}>
+          <div className="d-flex justify-content-between align-items-center pl-3 pr-1 pb-2 mt-2">
+            <span className="span-message font-weight-bold ml-2">Messages</span>
+            <Nav variant="tabs" className="justify-content-center">
+              <Nav.Item>
+                <Nav.Link eventKey={CONVERSATIONS_KEY}  onClick={() => setModalOpen(true)} className="rounded button-edit pl-5">
+                  <FontAwesomeIcon icon={faEdit} className="span-message-icon"/>
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link eventKey={CONTACTS_KEY} onClick={() => setModalOpen(true)} className="button-add-contact pt-2 pl-0">
+                  <FontAwesomeIcon icon={faPlusCircle} className="add-contact-icon"/>
+                </Nav.Link>
+              </Nav.Item>
+            </Nav>
           </div>
-          <Button onClick={() => setModalOpen(true)} className="rounded-0">
-            New {conversationsOpen ? 'Conversation' : 'Contact'}
-          </Button>
-        </Tab.Container>*/}
-
+        </Tab.Container>
+        <Form>
+          <InputGroup className="pb-3 mt-1 px-4 border-bottom">
+            <InputGroup.Prepend >
+              <Button className="button-search-message">
+                <FontAwesomeIcon icon={faSearch} className="search-icon-message" />
+              </Button>
+            </InputGroup.Prepend>
+            <FormControl className="input-search-message text-black" id="inlineFormInputGroupMessage" placeholder="Search"/>
+          </InputGroup>
+        </Form>
+        <div className="overflow-auto">
+          <Tab.Container activeKey={CONVERSATIONS_KEY}>
+            <Tab.Content className="border-right overflow-auto flex-grow-1">
+              <Tab.Pane eventKey={CONVERSATIONS_KEY}>
+                <Conversations />
+              </Tab.Pane>
+            </Tab.Content>
+          </Tab.Container>
+        </div>
         <Modal show={modalOpen} onHide={closeModal}>
           {conversationsOpen ?
             <NewConversationModal closeModal={closeModal} /> :
