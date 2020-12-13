@@ -231,3 +231,18 @@
 .button-create-contact:focus {
     box-shadow: none !important;
 }
+
+
+/* media-query */
+@media (max-width: 768px) {
+    
+}
+
+@media only screen and (min-width: 768px) {
+    .mobile-view {
+        display:none;
+    }
+}
+
+
+
