@@ -23,11 +23,11 @@ export default function MessageTitleThirdColumn()  {
     return (
         <div>
             <Tab.Container activeKey={activeKey} onSelect={setActiveKey}>
-                <div className="d-flex justify-content-between align-items-center pl-3 pr-1 pb-2 mt-2">
+                <div className="message-title-movile d-flex justify-content-between align-items-center pl-3 pr-1 pb-2 pt-2">
                     <span className="span-message font-weight-bold ml-2">Messages</span>
                     <Nav variant="tabs" className="justify-content-center">
                         <Nav.Item>
-                            <Nav.Link eventKey={CONVERSATIONS_KEY}  onClick={() => setModalOpen(true)} className="rounded button-edit pl-5">
+                            <Nav.Link eventKey={CONVERSATIONS_KEY}  onClick={() => setModalOpen(true)} className="button-edit pl-5">
                             <FontAwesomeIcon icon={faEdit} className="span-message-icon"/>
                             </Nav.Link>
                         </Nav.Item>
@@ -39,7 +39,7 @@ export default function MessageTitleThirdColumn()  {
                     </Nav>
                 </div>
             </Tab.Container>
-            <Form>
+            <Form className="form-search-trd-column">
                 <InputGroup className="pb-3 mt-1 px-4 border-bottom">
                     <InputGroup.Prepend >
                         <Button className="button-search-message">

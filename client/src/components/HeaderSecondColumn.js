@@ -1,15 +1,21 @@
 import React from 'react';
 import { Button, Form, InputGroup, FormControl } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch} from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft, faSearch} from '@fortawesome/free-solid-svg-icons';
 import '../Styles/Styles.css';
 
 export default function HeaderSecondColumn()  {
 
     return (
-        <div>
-            <span className="inbox-title">Inbox</span>
-            <Form>
+        <div className="d-flex flex-column inbox-title-container">
+            <div className="d-flex flex-row justify-content-between align-items-end">
+                <div className="d-flex align-items-end">
+                    <FontAwesomeIcon icon={faArrowLeft} className="arrow-icon" />
+                    <span className="inbox-title">Inbox</span>
+                </div>
+                <FontAwesomeIcon icon={faSearch} className="search-icon-mobile" />
+            </div>
+            <Form className="form-search-snd-column">
             <InputGroup className="mb-2 px-3">
                 <InputGroup.Prepend >
                 <Button className="button-search">

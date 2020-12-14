@@ -4,6 +4,7 @@ import OpenConversation from './OpenConversation';
 import { useConversations } from '../contexts/ConversationsProvider';
 import '../Styles/Styles.css';
 import MobileBar from './MobileBar';
+import DashboardMobile from './DashboardMovile';
 
 export default function Dashboard({ id }) {
   const { selectedConversation } = useConversations()
@@ -17,7 +18,7 @@ export default function Dashboard({ id }) {
         </div>
       </div>
       <div className="mobile-view">
-        <MobileBar/>
+        <DashboardMobile id={id} />
       </div>
     </div>
   )

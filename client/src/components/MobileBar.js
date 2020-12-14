@@ -1,20 +1,20 @@
-import React from 'react'
-import Sidebar from './Sidebar';
-import OpenConversation from './OpenConversation';
+import React from 'react';
+import { Navbar, Nav } from 'react-bootstrap';
 import { useConversations } from '../contexts/ConversationsProvider';
 import '../Styles/Styles.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faCog, faPowerOff, faSearch, faTasks, faUser, faUserFriends, faPlusCircle } from '@fortawesome/free-solid-svg-icons';
-import { faEdit } from '@fortawesome/free-regular-svg-icons';
+import { faCommentDots, faEllipsisH, faUser, faUsers } from '@fortawesome/free-solid-svg-icons';
+
 
 export default function MobileBar({ id }) {
     const { selectedConversation } = useConversations()
   
     return (
-    
-        <div>
-        hello world
+        <div className="d-flex align-items-center movile-navbar justify-content-around">
+            <FontAwesomeIcon icon={faUser} className="movile-navbar-icon" />
+            <FontAwesomeIcon icon={faCommentDots} className="movile-navbar-icon" />
+            <FontAwesomeIcon icon={faUsers} className="movile-navbar-icon" />
+            <FontAwesomeIcon icon={faEllipsisH} className="movile-navbar-icon" />
         </div>
-       
     )
   }
