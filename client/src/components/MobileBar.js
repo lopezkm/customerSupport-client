@@ -11,13 +11,13 @@ export default function MobileBar() {
             <Link to="/#" style={{textDecoration: 'none', color: 'white'}}>
                 <FontAwesomeIcon icon={faUser} className="movile-navbar-icon" />
             </Link>
-            <Link to="/conversation" style={{textDecoration: 'none', color: 'white'}}>
+            <Link to="/conversation" style={{}}>
                 <FontAwesomeIcon icon={faCommentDots} className="movile-navbar-icon" />
             </Link>
             <Link to="/#" style={{textDecoration: 'none', color: 'white'}}>
                 <FontAwesomeIcon icon={faUsers} className="movile-navbar-icon" />
             </Link>
-            <Link to="/#" style={{textDecoration: 'none', color: 'white'}}>
+            <Link to="/settings" style={{textDecoration: 'none', color: 'white'}}>
                 <FontAwesomeIcon icon={faEllipsisH} className="movile-navbar-icon" />
             </Link>            
         </div>
