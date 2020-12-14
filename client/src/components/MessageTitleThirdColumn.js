@@ -25,14 +25,14 @@ export default function MessageTitleThirdColumn()  {
             <Tab.Container activeKey={activeKey} onSelect={setActiveKey}>
                 <div className="message-title-movile d-flex justify-content-between align-items-center pl-3 pr-1 pb-2 pt-2">
                     <span className="span-message font-weight-bold ml-2">Messages</span>
-                    <Nav variant="tabs" className="justify-content-center">
+                    <Nav variant="tabs" className="justify-content-center nav-message-title">
                         <Nav.Item>
                             <Nav.Link eventKey={CONVERSATIONS_KEY}  onClick={() => setModalOpen(true)} className="button-edit pl-5">
                             <FontAwesomeIcon icon={faEdit} className="span-message-icon"/>
                             </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link eventKey={CONTACTS_KEY} onClick={() => setModalOpen(true)} className="button-add-contact pt-2 pl-0">
+                            <Nav.Link eventKey={CONTACTS_KEY} onClick={() => setModalOpen(true)} className="button-add-contact pl-0">
                             <FontAwesomeIcon icon={faPlusCircle} className="add-contact-icon"/>
                             </Nav.Link>
                         </Nav.Item>

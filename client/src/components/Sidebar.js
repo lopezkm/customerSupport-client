@@ -21,7 +21,7 @@ export default function Sidebar({ id }) {
         <TeammatesTitleSecondColumn/>
         <TeammatesSecondColumn/>
       </div>
-      <div style={{ width: '16.5rem', height: '97vh' }} className="d-flex flex-column border-right">
+      <div style={{ width: '16.5rem', height: '97vh' }} className=" rounded d-flex flex-column border-right">
         <HeaderThirdColumn/>
         <MessageTitleThirdColumn/>
         <ConversationListThirdColumn/>

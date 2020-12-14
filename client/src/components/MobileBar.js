@@ -1,20 +1,25 @@
 import React from 'react';
-import { Navbar, Nav } from 'react-bootstrap';
-import { useConversations } from '../contexts/ConversationsProvider';
-import '../Styles/Styles.css';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCommentDots, faEllipsisH, faUser, faUsers } from '@fortawesome/free-solid-svg-icons';
+import '../Styles/Styles.css';
 
-
-export default function MobileBar({ id }) {
-    const { selectedConversation } = useConversations()
+export default function MobileBar() {
   
     return (
         <div className="d-flex align-items-center movile-navbar justify-content-around">
-            <FontAwesomeIcon icon={faUser} className="movile-navbar-icon" />
-            <FontAwesomeIcon icon={faCommentDots} className="movile-navbar-icon" />
-            <FontAwesomeIcon icon={faUsers} className="movile-navbar-icon" />
-            <FontAwesomeIcon icon={faEllipsisH} className="movile-navbar-icon" />
+            <Link to="/#" style={{textDecoration: 'none', color: 'white'}}>
+                <FontAwesomeIcon icon={faUser} className="movile-navbar-icon" />
+            </Link>
+            <Link to="/conversation" style={{textDecoration: 'none', color: 'white'}}>
+                <FontAwesomeIcon icon={faCommentDots} className="movile-navbar-icon" />
+            </Link>
+            <Link to="/#" style={{textDecoration: 'none', color: 'white'}}>
+                <FontAwesomeIcon icon={faUsers} className="movile-navbar-icon" />
+            </Link>
+            <Link to="/#" style={{textDecoration: 'none', color: 'white'}}>
+                <FontAwesomeIcon icon={faEllipsisH} className="movile-navbar-icon" />
+            </Link>            
         </div>
     )
   }

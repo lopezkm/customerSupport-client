@@ -266,7 +266,7 @@
 }
 
 /* media-query */
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     .desktop-view {
         display:none;
     }
@@ -289,20 +289,23 @@
     .message-title-movile {
         background-color:  #4699A7;
     }
+    .nav-message-title{
+        border:  #4699A7 !important;
+    }
     .button-edit {
         background-color:  #4699A7 !important;
-        border: 2px solid #4699A7 !important;
+        border:  solid #4699A7 !important;
     }
     .button-add-contact {
         background-color:  #4699A7 !important;
-        border: 2px solid #4699A7 !important;
+        border:  solid #4699A7 !important;
     }
     .add-contact-icon {
         color: #2B2425;
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
     .mobile-view {
         display:none;
     }

@@ -10,7 +10,7 @@ export default function ConversationListThirdColumn()  {
     return (
         <div className="overflow-auto rounded">
           <Tab.Container activeKey={CONVERSATIONS_KEY}>
-            <Tab.Content className="border-right overflow-auto flex-grow-1">
+            <Tab.Content className="border-right flex-grow-1">
               <Tab.Pane eventKey={CONVERSATIONS_KEY}>
                 <Conversations />
               </Tab.Pane>
