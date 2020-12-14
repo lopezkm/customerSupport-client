@@ -3,7 +3,7 @@ import HeaderSecondColumn from './HeaderSecondColumn';
 import SidebarFirstColumn from './SidebarFirstColumn';
 import '../Styles/Styles.css';
 
-export default function SettingsMovile()  {
+export default function SettingsMobile()  {
 
     return (
         <div>

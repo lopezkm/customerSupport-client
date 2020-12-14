@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faCog, faPowerOff} from '@fortawesome/free-solid-svg-icons';
 import '../Styles/Styles.css';
@@ -11,11 +11,11 @@ export default function SidebarFirstColumn()  {
         <div className="d-flex sidebar-bottom-icons">
           <div className="setting-container-elements">
             <FontAwesomeIcon icon={faCog} className="setting-menu" />
-            <span className="setting-title-movile">Settings</span>
+            <span className="setting-title-mobile">Settings</span>
           </div>
           <div className="setting-container-elements">
             <FontAwesomeIcon icon={faPowerOff} className="power-menu" />
-            <span className="power-title-movile">Power on/off</span>
+            <span className="power-title-mobile">Power on/off</span>
           </div>
         </div>
       </div>

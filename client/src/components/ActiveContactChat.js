@@ -1,23 +1,24 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircle, faEllipsisV } from '@fortawesome/free-solid-svg-icons';
+import { faCircle, faEllipsisV, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import '../Styles/Styles.css';
 
 export default function ActiveContactChat()  {
 
     return (
-      <div className="py-3 mx-4 border-bottom d-flex flex-row justify-content-between align-items-center">
+      <div className="active-contact-chat-container d-flex flex-row justify-content-between align-items-center">
         <div className="d-flex flex-row align-items-center">
-          <div className="contact-picture mr-2 rounded"></div>
+          <div className="contact-picture"></div>
+          <FontAwesomeIcon icon={faArrowLeft} className="active-chat-arrow-icon"/>
           <div>
-            <div className="small font-weight-bold">Lisa Westfall</div>
+            <div className="contact-name-chat">Lisa Westfall</div>
             <div className="small-status d-flex align-items-center">
-              <FontAwesomeIcon icon={faCircle} className="small-icon mr-1"/>
+              <FontAwesomeIcon icon={faCircle} className="small-icon"/>
               <span>Active Now</span>
             </div>
           </div>
         </div>
-        <FontAwesomeIcon icon={faEllipsisV}/>
+        <FontAwesomeIcon icon={faEllipsisV} className="vertical-dots-icon"/>
       </div>
     )
 }

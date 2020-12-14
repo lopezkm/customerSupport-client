@@ -4,7 +4,7 @@ import MessageTitleThirdColumn from './MessageTitleThirdColumn';
 import ConversationListThirdColumn from './ConversationListThirdColumn';
 import '../Styles/Styles.css';
 
-export default function ContactConversationsMovile()  {
+export default function ContactConversationsMobile()  {
 
     return (
         <div>

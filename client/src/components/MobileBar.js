@@ -7,18 +7,18 @@ import '../Styles/Styles.css';
 export default function MobileBar() {
   
     return (
-        <div className="d-flex align-items-center movile-navbar justify-content-around">
-            <Link to="/#" style={{textDecoration: 'none', color: 'white'}}>
-                <FontAwesomeIcon icon={faUser} className="movile-navbar-icon" />
+        <div className="d-flex align-items-center mobile-navbar justify-content-around">
+            <Link to="/messages">
+                <FontAwesomeIcon icon={faUser} className="mobile-navbar-icon"/>
             </Link>
-            <Link to="/conversation" style={{}}>
-                <FontAwesomeIcon icon={faCommentDots} className="movile-navbar-icon" />
+            <Link to="/conversations">
+                <FontAwesomeIcon icon={faCommentDots} className="mobile-navbar-icon"/>
             </Link>
-            <Link to="/#" style={{textDecoration: 'none', color: 'white'}}>
-                <FontAwesomeIcon icon={faUsers} className="movile-navbar-icon" />
+            <Link to="/teammates">
+                <FontAwesomeIcon icon={faUsers} className="mobile-navbar-icon"/>
             </Link>
-            <Link to="/settings" style={{textDecoration: 'none', color: 'white'}}>
-                <FontAwesomeIcon icon={faEllipsisH} className="movile-navbar-icon" />
+            <Link to="/settings">
+                <FontAwesomeIcon icon={faEllipsisH} className="mobile-navbar-icon"/>
             </Link>            
         </div>
     )

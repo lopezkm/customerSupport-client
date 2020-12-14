@@ -2,7 +2,7 @@ import React from 'react'
 import Sidebar from './Sidebar';
 import OpenConversation from './OpenConversation';
 import { useConversations } from '../contexts/ConversationsProvider';
-import DashboardMobile from './DashboardMovile';
+import DashboardMobile from './DashboardMobile';
 import '../Styles/Styles.css';
 
 export default function Dashboard({ id }) {

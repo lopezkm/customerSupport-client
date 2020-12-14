@@ -21,8 +21,8 @@ export default function TypingTextChatArea()  {
     }
 
     return (
-        <Form  className="mb-2" onSubmit={handleSubmit}>
-            <Form.Group className="m-2">
+        <Form  className="typing-chat-container" onSubmit={handleSubmit}>
+            <Form.Group className="typing-form-group">
                 <InputGroup>
                     <InputGroup.Prepend >
                         <Button className="button-clip-and-mic">
@@ -30,6 +30,7 @@ export default function TypingTextChatArea()  {
                         </Button>
                     </InputGroup.Prepend>
                     <Form.Control className="input-enter-message"
+                    id="textArea"
                     as="textarea"
                     required
                     value={text}
