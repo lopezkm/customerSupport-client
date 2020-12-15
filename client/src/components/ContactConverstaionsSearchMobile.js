@@ -1,14 +1,14 @@
 import React from 'react';
-import HeaderFucntionalSearchConversationsMobile from './HeaderFucntionalSearchConversationsMobile';
+import HeaderOpenSearchConversationsMobile from './HeaderOpenSearchConversationsMobile';
 import MessageTitleThirdColumn from './MessageTitleThirdColumn';
 import ConversationListThirdColumn from './ConversationListThirdColumn';
 import '../Styles/Styles.css';
 
-export default function ContactConversationsMobile()  {
+export default function ContactConverstaionsSearchMobile()  {
 
     return (
         <div>
-            <HeaderFucntionalSearchConversationsMobile/>
+            <HeaderOpenSearchConversationsMobile/>
             <MessageTitleThirdColumn/>
             <ConversationListThirdColumn/>
         </div>

@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faSearch} from '@fortawesome/free-solid-svg-icons';
 import '../Styles/Styles.css';
 
-export default function HeaderSecondColumn()  {
+export default function HeaderFucntionalSearchTeammatesMobile()  {
 
     return (
         <div className="d-flex flex-column inbox-title-container">
@@ -14,7 +14,7 @@ export default function HeaderSecondColumn()  {
                     <FontAwesomeIcon icon={faArrowLeft} className="arrow-icon" />
                     <span className="inbox-title">Inbox</span>
                 </div>
-                <Link to='/settings'>
+                <Link to='/searchTeammates'>
                     <FontAwesomeIcon icon={faSearch} className="search-icon-mobile" />
                 </Link>
             </div>
