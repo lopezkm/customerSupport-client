@@ -12,7 +12,6 @@ import '../Styles/Styles.css';
 
 export default function DashboardMobile({ id }) {
     const { selectedConversation } = useConversations()
-  
     return (
         <div className="d-flex flex-column-reverse" style={{minHeight:'100vh'}}>
             <Route path='/'render={() => <MobileBar/>}/>

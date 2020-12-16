@@ -43,9 +43,9 @@ body {
     font-weight: bold;
 }
 .arrow-icon {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: white;
-    margin-left: 1.5rem;
+    margin-left: 1.2rem;
     margin-bottom:0.25rem;
 }
 .search-icon-mobile {
@@ -261,7 +261,7 @@ body {
 
 /* mobile-Bar styles */
 .mobile-navbar {
-    height: 3rem;
+    height: 2.5rem;
     background-color: #2B2425;
 }
 .mobile-navbar-icon {
@@ -276,6 +276,9 @@ body {
 @media (max-width: 769px) {
     .desktop-view {
         display:none;
+    }
+    .conversation-title{
+        color: black;
     }
     .form-search-snd-column {
         display:none;
@@ -431,7 +434,7 @@ body {
     }
     .arrow-back-search-container {
         background-color: white;
-        height: 2rem;
+        height: 2.03rem;
         margin-top: 1.93rem;
     }
     .arrow-back-search-icon{
@@ -445,10 +448,64 @@ body {
         background-color: white !important;
         border: none !important;
         margin-top: 1.93rem;
-        height: 2rem !important;
+        height: 2.03rem !important;
     }
     .input-search-teammates-mobile:focus {
         box-shadow: none !important;
+    }
+    .container-dropUp {
+        background-color: #2B2425;
+    }
+    .openDropUp {
+        width: 100%;
+        background-color: #4699A7;
+        border: solid #4699A7;
+        display: flex;
+        justify-content: center;
+        height: 0.5rem;
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+    }
+    .mobile-dropUp-icon {
+        background-color: black;
+        height: 0.1rem;
+        width: 30%;
+        border-radius: 1rem;
+    }
+    .react-modal-sheet-container {
+        background-color: #4699A7 !important;
+        border-top-left-radius: 1.5rem !important;
+        border-top-right-radius: 1.5rem !important;
+    }
+    .conversation-title {
+        padding-left: 2rem;
+        color: black;
+        font-weight: bold;
+        padding-bottom: 0.5rem;
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+    .text-dropUp {
+        font-size: 1.3rem !important;
+    }
+    .conversation-icon {
+        font-size: 2rem;
+        margin-right: 0.7rem;
+        width: 2.8rem !important;
+    }
+    .container-text-dropUp {
+        margin-bottom: 1.5rem;
+    }
+    /* .form-check-input[type="checkbox"] {
+        display: none !important;
+    } */
+    .form-check-input[type="radio"] {
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+    .form-check {
+        padding-bottom: 1.7rem;
+        margin-right: 0.5rem;
     }
 }
 @media only screen and (min-width: 769px) {
@@ -464,11 +521,17 @@ body {
     .setting-title-mobile {
         display: none;
     }
-    .power-title-mobile {
+    .power-title-mobile { 
         display: none;
     }
     .active-chat-arrow-icon {
         display: none;
+    }
+    /* .form-check-input[type="radio"] {
+        display: none !important;
+    } */
+    .form-check-input[type="checkbox"] {
+        display:block !important;
     }
 }
 
