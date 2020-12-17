@@ -10,10 +10,10 @@ export default function ReadingChatArea()  {
         }
     }, [])
 
-    const { sendMessage, selectedConversation } = useConversations()
+    const { sendMessage, selectedConversation } = useConversations();
 
     return (
-        <div className="flex-grow-1 overflow-auto">
+        <div className="flex-grow-1 overflow-auto my-1 reading-chat-area-height-mobile" >
             <div className="d-flex flex-column align-items-start justify-content-end px-4 pt-3">
                 {selectedConversation.messages.map((message, index) => {
                     const lastMessage = selectedConversation.messages.length - 1 === index;

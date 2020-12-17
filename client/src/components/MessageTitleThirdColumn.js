@@ -21,7 +21,7 @@ export default function MessageTitleThirdColumn()  {
     }
 
     return (
-        <div>
+        <div className="message-title-third-column-position-mobile">
             <Tab.Container activeKey={activeKey} onSelect={setActiveKey}>
                 <div className="message-title-mobile d-flex justify-content-between align-items-center pl-3 pr-1 pb-2 pt-2">
                     <span className="span-message font-weight-bold ml-2">Messages</span>

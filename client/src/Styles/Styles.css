@@ -261,8 +261,9 @@ body {
 
 /* mobile-Bar styles */
 .mobile-navbar {
-    height: 2.5rem;
+    height: 3rem;
     background-color: #2B2425;
+    position: fixed; bottom: 0rem; width: 100%;
 }
 .mobile-navbar-icon {
     color: white;
@@ -289,6 +290,7 @@ body {
     .inbox-title-container {
         background-color: #2B2425;
         height: 4rem;
+        position: fixed;top: 0; width: 100%;
     }
     .inbox-title {
         margin-top: 1rem;
@@ -333,9 +335,9 @@ body {
     .sidebar-first-column {
         background-color: white;
         width: 100%;
-        min-height: 82.5vh;
         align-items: start;
         justify-content: space-between;
+        margin-top: 4.5rem;
     }
     .sidebar-bottom-icons {
         flex-direction: column-reverse;
@@ -358,9 +360,10 @@ body {
     }
     .div-under-teammates {
         background-color: white;
-        margin: 0;
-        padding: 1rem;
-        height: 77.5vh;
+        margin-top: 5.5rem;
+        margin-bottom: 2.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
     .teammates-title {
         padding-left: 1.2rem;
@@ -371,6 +374,7 @@ body {
         background-color: #4699A7;
         height: 2rem;
         padding-bottom: 0.3rem;
+        position: fixed; top: 3.9rem; width: 100%;
     }
     .name-teammates{
         color: black;
@@ -403,6 +407,7 @@ body {
         padding: 0.4rem 1.5rem;
         margin:0;
         background-color: #4699A7;
+        position: fixed; top: 0; width: 100%;
     }
     .small-icon{
         color: white;
@@ -415,6 +420,9 @@ body {
     }
     .typing-chat-container {
         height: 2.5rem;
+        position: fixed; bottom: 2.6rem; width: 100%;
+        background-color: white !important;
+        padding-bottom: 3rem;
     }
     .typing-form-group {
         margin:0 0.5rem;
@@ -431,6 +439,7 @@ body {
     .open-search-container {
         background-color: #2B2425;
         height: 4rem;
+        position: fixed; top:0; width: 100%;
     }
     .arrow-back-search-container {
         background-color: white;
@@ -454,7 +463,9 @@ body {
         box-shadow: none !important;
     }
     .container-dropUp {
+        height: 0.5rem;
         background-color: #2B2425;
+        position: fixed; bottom: 0;
     }
     .openDropUp {
         width: 100%;
@@ -465,6 +476,7 @@ body {
         height: 0.5rem;
         border-top-left-radius: 2rem;
         border-top-right-radius: 2rem;
+        position: fixed; bottom: 0;
     }
     .mobile-dropUp-icon {
         background-color: black;
@@ -503,6 +515,17 @@ body {
     .form-check {
         padding-bottom: 1.7rem;
         margin-right: 0.5rem;
+    }
+    .reading-chat-area-height-mobile {
+        padding-bottom: 6rem !important;
+        padding-top: 3.3rem !important;
+    }
+    .conversation-list-third-column-height {
+        margin-bottom: 3rem;
+        margin-top: 8rem;
+    }
+    .message-title-third-column-position-mobile {
+        position: fixed; top: 3.9rem; width: 100%;
     }
 }
 @media only screen and (min-width: 769px) {

@@ -13,7 +13,7 @@ import '../Styles/Styles.css';
 export default function DashboardMobile({ id }) {
     const { selectedConversation } = useConversations()
     return (
-        <div className="d-flex flex-column-reverse" style={{minHeight:'100vh'}}>
+        <div className="d-flex flex-column">
             <Route path='/'render={() => <MobileBar/>}/>
             <Route exact path='/messages'render={() =><ChatAreaMobile/>}/>
             <Route exact path='/conversations'render={() =><ContactConversationsMobile/>}/> 
