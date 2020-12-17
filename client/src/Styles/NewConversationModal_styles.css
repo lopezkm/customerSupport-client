@@ -1,0 +1,8 @@
+/* NewConversationModal styles */
+.NewConversationModal-button-create-conversation {
+    background-color: #4699A7!important;
+    border:#4699A7!important;
+}
+.NewConversationModal-button-create-conversation:focus {
+    box-shadow: none !important;
+}

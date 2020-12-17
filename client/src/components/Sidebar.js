@@ -7,7 +7,7 @@ import TeammatesSecondColumn from './desktop_view/TeammatesSecondColumn';
 import HeaderThirdColumn from './desktop_view/HeaderThirdColumn';
 import MessageTitleThirdColumn from './desktop_view/MessageTitleThirdColumn';
 import ConversationListThirdColumn from './desktop_view/ConversationListThirdColumn';
-import '../Styles/Styles.css';
+import '../Styles/Sidebar_styles.css';
 
 
 export default function Sidebar({ id }) { 

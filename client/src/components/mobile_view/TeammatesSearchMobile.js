@@ -7,7 +7,7 @@ import '../../Styles/Styles.css';
 export default function SettingsMobile()  {
 
     return (
-        <div style={{minHeight:'50vh'}}>
+        <div>
             <HeaderOpenSearchTeammatesMobile/>
             <TeammatesTitleSecondColumn/>
             <TeammatesSecondColumn/>

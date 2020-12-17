@@ -1,0 +1,32 @@
+/* media-query */
+/* mobile-view */
+@media (max-width: 769px) {
+    /* HeaderOpenSearchTeammatesMobile styles */
+    /* && HeaderOpenSearchConversationsMobile styles */
+    .HeaderOpenSearchConversationsMobile-container {
+        background-color: #2B2425;
+        height: 4rem;
+        position: fixed; top:0; width: 100%;
+    }
+    .HeaderOpenSearchConversationsMobile-arrow-back {
+        background-color: white;
+        height: 2.03rem;
+        margin-top: 1.93rem;
+    }
+    .HeaderOpenSearchConversationsMobile-arrow-back-icon{
+        color: black;
+        font-size: 1.3rem;
+        margin-top: 0.25rem;
+        margin-left: 1.2rem;
+    }
+    .HeaderOpenSearchConversationsMobile-input-search-teammates {
+        border-radius: 0 !important;
+        background-color: white !important;
+        border: none !important;
+        margin-top: 1.93rem;
+        height: 2.03rem !important;
+    }
+    .HeaderOpenSearchConversationsMobile-input-search-teammates:focus {
+        box-shadow: none !important;
+    }
+}

@@ -5,7 +5,7 @@ import { Tab, Nav, Button, Form, InputGroup, FormControl, Modal } from 'react-bo
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faPlusCircle } from '@fortawesome/free-solid-svg-icons';
 import { faEdit } from '@fortawesome/free-regular-svg-icons';
-import '../../Styles/Styles.css';
+import '../../Styles/MessageTitleThirdColumn_style.css';
 
 const CONVERSATIONS_KEY = 'conversations';
 const CONTACTS_KEY = 'contacts';
@@ -27,12 +27,12 @@ export default function MessageTitleThirdColumn()  {
                     <span className="MessageTitleThirdColumn-span-message font-weight-bold ml-2">Messages</span>
                     <Nav variant="tabs" className="justify-content-center MessageTitleThirdColumn-nav-message-title">
                         <Nav.Item>
-                            <Nav.Link eventKey={CONVERSATIONS_KEY}  onClick={() => setModalOpen(true)} className="button-edit pl-5">
+                            <Nav.Link eventKey={CONVERSATIONS_KEY}  onClick={() => setModalOpen(true)} className="MessageTitleThirdColumn-button-edit pl-5">
                             <FontAwesomeIcon icon={faEdit} className="MessageTitleThirdColumn-span-message-icon"/>
                             </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link eventKey={CONTACTS_KEY} onClick={() => setModalOpen(true)} className="button-add-contact pl-0">
+                            <Nav.Link eventKey={CONTACTS_KEY} onClick={() => setModalOpen(true)} className="MessageTitleThirdColumn-button-add-contact pl-0">
                             <FontAwesomeIcon icon={faPlusCircle} className="MessageTitleThirdColumn-add-contact-icon"/>
                             </Nav.Link>
                         </Nav.Item>

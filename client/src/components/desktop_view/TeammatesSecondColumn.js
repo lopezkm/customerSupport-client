@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../Styles/Styles.css';
+import '../../Styles/TeammatesSecondColumn_styles.css';
 
 export default function TeammatesSecondColumn()  {
 

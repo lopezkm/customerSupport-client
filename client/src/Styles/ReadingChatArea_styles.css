@@ -1,0 +1,17 @@
+/* ReadingChatArea styles */
+.ReadingChatArea-chat-color-me {
+    background-color:#8044A2;
+}
+.ReadingChatArea-chat-color-sender {
+    background-color: lightgrey;
+}
+
+/* media-query */
+/* mobile-view */
+@media (max-width: 769px) {
+    /* ReadingChatArea-mobile styles */
+    .ReadingChatArea-size-mobile {
+        padding-bottom: 6rem !important;
+        padding-top: 3.3rem !important;
+    }
+}

@@ -1,0 +1,13 @@
+/* MobileBar styles */
+.MobileBar-container {
+    height: 3rem;
+    background-color: #2B2425;
+    position: fixed; bottom: 0rem; width: 100%;
+}
+.MobileBar-icon {
+    color: white;
+    font-size: 1.7rem;
+}
+.MobileBar-icon:hover {
+    color: #4699A7;
+}

@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
-import { Modal, Form, Button } from 'react-bootstrap'
-import { useContacts } from '../contexts/ContactsProvider'
-import { useConversations } from '../contexts/ConversationsProvider'
+import React, { useState } from 'react';
+import { Modal, Form, Button } from 'react-bootstrap';
+import { useContacts } from '../contexts/ContactsProvider';
+import { useConversations } from '../contexts/ConversationsProvider';
+import '../Styles/NewConversationModal_styles.css';
 
 export default function NewConversationModal({ closeModal }) {
   const [selectedContactIds, setSelectedContactIds] = useState([])

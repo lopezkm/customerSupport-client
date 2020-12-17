@@ -1,0 +1,26 @@
+/* TeammatesTitleSecondColumn styles*/
+.TeammatesTitleSecondColumn-container{
+    padding-bottom: 0.5rem;
+}
+.TeammatesTitleSecondColumn-title {
+    padding-left: 1.2rem;
+    color: white;
+    font-weight: bold;
+}
+
+/* media-query */
+/* mobile-view */
+@media (max-width: 769px) {
+    /* TeammatesTitleSecondColumn-mobile styles*/
+    .TeammatesTitleSecondColumn-title {
+        padding-left: 1.2rem;
+        color: #2B2425;
+        font-weight: bold;
+    }
+    .TeammatesTitleSecondColumn-container{
+        background-color: #4699A7;
+        height: 2rem;
+        padding-bottom: 0.3rem;
+        position: fixed; top: 3.9rem; width: 100%;
+    }
+}

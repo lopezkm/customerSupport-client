@@ -1,0 +1,8 @@
+/* NewContactModal styles */
+.NewContactModal-button-create-contact {
+    background-color: #4699A7!important;
+    border:#4699A7!important;
+}
+.NewContactModal-button-create-contact:focus {
+    box-shadow: none !important;
+}

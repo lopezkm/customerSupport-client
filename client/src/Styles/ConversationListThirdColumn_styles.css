@@ -1,0 +1,9 @@
+/* media-query */
+/* mobile-view */
+@media (max-width: 769px) {
+    /* ConversationListThirdColumn-mobile styles */
+    .ConversationListThirdColumn-size {
+        margin-bottom: 3rem;
+        margin-top: 8rem;
+    }
+}

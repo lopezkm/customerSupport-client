@@ -1,0 +1,32 @@
+/* media-query */
+/* mobile-view */
+@media (max-width: 769px) {
+    /* DropUpMobile-mobile styles */
+    .DropUpMobile-container {
+        height: 0.5rem;
+        background-color: #2B2425;
+        position: fixed; bottom: 0;
+    }
+    .DropUpMobile-open {
+        width: 100%;
+        background-color: #4699A7;
+        border: solid #4699A7;
+        display: flex;
+        justify-content: center;
+        height: 0.5rem;
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+        position: fixed; bottom: 0;
+    }
+    .DropUpMobile-icon {
+        background-color: black;
+        height: 0.1rem;
+        width: 30%;
+        border-radius: 1rem;
+    }
+    .react-modal-sheet-container {
+        background-color: #4699A7 !important;
+        border-top-left-radius: 1.5rem !important;
+        border-top-right-radius: 1.5rem !important;
+    }
+}

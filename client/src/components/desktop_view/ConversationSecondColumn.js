@@ -2,7 +2,7 @@ import React, { useLayoutEffect, useState } from 'react';
 import { Form } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTasks, faUser, faUserFriends } from '@fortawesome/free-solid-svg-icons';
-import '../../Styles/Styles.css';
+import '../../Styles/ConversationSecondColumn_styles.css';
 
 export default function ConversationSecondColumn()  {
 

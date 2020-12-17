@@ -1,0 +1,45 @@
+/* TypingTextChatArea styles*/
+.TypingTextChatArea-container {
+    margin-bottom: 0.3rem;
+}
+.TypingTextChatArea-form-group {
+    margin:1.4rem;
+}
+.TypingTextChatArea-button-send {
+    background-color: #8044A2 !important;
+    border:none !important;
+}
+.TypingTextChatArea-button-send:focus {
+    box-shadow: none !important;
+}
+.TypingTextChatArea-button-clip-and-mic {
+    background-color: rgb(231, 230, 230) !important;
+    border:1px solid rgb(216, 213, 213) !important;
+    color: gray !important;
+}
+.TypingTextChatArea-button-clip-and-mic:focus {
+    box-shadow: none !important;
+}
+.TypingTextChatArea-input-enter-message:focus {
+    box-shadow: none !important;
+    border: 1px solid  rgb(216, 213, 213) !important;
+}
+
+/* media-query */
+/* mobile-view */
+@media (max-width: 769px) {
+    /* TypingTextChatArea-mobile styles*/
+    .TypingTextChatArea-container {
+        height: 2.5rem;
+        position: fixed; bottom: 2.6rem; width: 100%;
+        background-color: white !important;
+        padding-bottom: 3rem;
+    }
+    .TypingTextChatArea-form-group {
+        margin:0 0.5rem;
+    }
+    #textArea::placeholder {
+        font-size: 0.6rem;
+        padding-top: 0.5rem;
+    } 
+}

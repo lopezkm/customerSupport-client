@@ -1,0 +1,65 @@
+/* HeaderSecondColumn styles*/
+.HeaderSecondColumn-inbox-title-container {
+    height: 8rem;
+}
+.HeaderSecondColumn-inbox-title {
+    padding-left: 1.2rem;
+    padding-top: 1rem;
+    color: white;
+    font-weight: bold;
+}
+.HeaderSecondColumn-arrow-icon {
+    font-size: 1.3rem;
+    color: white;
+    margin-left: 1.2rem;
+    margin-bottom:0.25rem;
+}
+.HeaderSecondColumn-button-search {
+    background-color: #4699A7 !important;
+    border-color: #4699A7 !important ;
+    margin-top: 1rem;
+}
+.HeaderSecondColumn-button-search:focus {
+    box-shadow: none !important;
+}
+.HeaderSecondColumn-search-icon {
+    color: white;
+}
+.HeaderSecondColumn-input-search {
+    background-color: #4699A7 !important;
+    border-color: #4699A7 !important ;
+    margin-top: 1rem;
+}
+.HeaderSecondColumn-input-search:focus {
+    box-shadow: none !important;
+}
+#inlineFormInputGroup::placeholder {
+    color: white;
+}
+
+/* media-query */
+/* mobile-view */
+@media (max-width: 769px) {
+    /* HeaderSecondColumn-mobile styles*/
+    /* && HeaderFucntionalSearchTeammatesMobile styles*/
+    /* && HeaderFucntionalSearchConversationsMobile styles*/
+    .HeaderSecondColumn-form-search-snd-column {
+        display:none;
+    }
+    .HeaderSecondColumn-inbox-title-container {
+        background-color: #2B2425;
+        height: 4rem;
+        position: fixed;top: 0; width: 100%;
+    }
+    .HeaderSecondColumn-inbox-title {
+        margin-top: 1rem;
+        padding-left: 1rem;
+        font-weight: bold;
+        font-size: 1.2rem; 
+    }
+    .HeaderSecondColumn-search-icon-mobile {
+        color: white;
+        font-size: 1.3rem;
+        margin-right: 1.4rem;
+    }
+}

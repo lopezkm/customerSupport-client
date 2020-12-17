@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneAlt, faStopwatch } from '@fortawesome/free-solid-svg-icons';
-import '../../Styles/Styles.css';
+import '../../Styles/ActiveContactChat_styles.css';
 
 export default function HeaderOpenConversation()  {
 

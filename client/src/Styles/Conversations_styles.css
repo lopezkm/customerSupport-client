@@ -1,0 +1,15 @@
+/*Conversation styles*/
+.Conversations-contact-picture-messages {
+    width: 3rem;
+    height: 3rem;
+    background-color: lightgray;
+}
+.Conversations-span-messages {
+    font-size: 0.6rem;
+    color: black;
+}
+.Conversations-span-messages-text {
+    font-size: 0.4rem;
+    color: lightgray;
+    max-width: 6.5rem;
+}

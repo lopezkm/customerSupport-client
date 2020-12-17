@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react';
 import { useConversations } from '../../contexts/ConversationsProvider';
-import '../../Styles/Styles.css';
+import '../../Styles/ReadingChatArea_styles.css';
 
 export default function ReadingChatArea()  {
 

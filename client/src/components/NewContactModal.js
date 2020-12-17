@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { Modal, Form, Button } from 'react-bootstrap';
 import { useContacts } from '../contexts/ContactsProvider';
-import '../Styles/Styles.css';
+import '../Styles/NewContactModal_styles.css';
 
 export default function NewContactModal({ closeModal }) {
   const idRef = useRef()

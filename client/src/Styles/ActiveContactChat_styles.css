@@ -1,0 +1,65 @@
+/* ActiveContactChat and HeaderOpenConversation styles */
+.ActiveContactChat-container{
+    padding: 1rem 0;
+    margin: 0 1.5rem;
+    border-bottom: 0.5px solid rgb(238, 233, 233);
+}
+.ActiveContactChat-contact-picture {
+    background-color: lightgrey;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.7rem;
+    border-radius: 4px;
+}
+.ActiveContactChat-contact-name {
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+.ActiveContactChat-status {
+    font-size: 0.6rem;
+    color:  #8044A2;
+}
+.ActiveContactChat-icon {
+    font-size: 0.3rem;
+    color:  #8044A2;
+    margin-right: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
+/* media-query */
+/* mobile-view */
+@media (max-width: 769px) {
+    /* ActiveContactChat-mobile and HeaderOpenConversation styles */
+    .ActiveContactChat-container{
+        padding: 0.4rem 1.5rem;
+        margin:0;
+        background-color: #4699A7;
+        position: fixed; top: 0; width: 100%;
+    }
+    .ActiveContactChat-contact-picture {
+        display: none;
+    }
+    .ActiveContactChat-contact-name {
+        font-weight: bold;
+        font-size: 1.3rem;
+        color: #2B2425;
+    }
+    .ActiveContactChat-vertical-dots-icon {
+        font-size: 1.3rem;
+        color: #2B2425;
+    }
+    .ActiveContactChat-icon{
+        color: white;
+        font-size: 0.5rem;
+        margin-bottom: 0.1rem;
+    }
+    .ActiveContactChat-status {
+        color: white;
+        font-size: 0.8rem;
+    }
+    .ActiveContactChat-arrow-icon {
+        margin-right: 1rem;
+        color: #2B2425;
+        font-size: 1.5rem;
+    }
+}

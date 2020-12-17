@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Conversations from '../Conversations';
 import { Tab } from 'react-bootstrap';
-import '../../Styles/Styles.css';
+import '../../Styles/ConversationListThirdColumn_styles.css';
 
 const CONVERSATIONS_KEY = 'conversations';
 

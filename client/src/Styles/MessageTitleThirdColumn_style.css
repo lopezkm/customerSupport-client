@@ -1,0 +1,76 @@
+/* MessageTitleThirdColumn styles */
+.MessageTitleThirdColumn-span-message {
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.MessageTitleThirdColumn-span-message-icon {
+    font-size: 1.5rem;
+}
+.MessageTitleThirdColumn-add-contact-icon {
+    font-size: 1.5rem;
+}
+.MessageTitleThirdColumn-button-search-message {
+    background-color: lightgray !important;
+    border-color: lightgray !important ;
+}
+.MessageTitleThirdColumn-button-search-message:focus {
+    box-shadow: none !important;
+}
+.MessageTitleThirdColumn-search-icon-message {
+    color: gray;
+}
+.MessageTitleThirdColumn-input-search-message {
+    background-color: lightgray !important;
+    border-color: lightgray !important ;
+}
+.MessageTitleThirdColumn-input-search-message:focus {
+    box-shadow: none !important;
+}
+#inlineFormInputGroupMessage::placeholder {
+    color: gray;
+}
+.MessageTitleThirdColumn-button-edit {
+    background-color: white !important;
+    border:white!important;
+    color: black !important;
+}
+.MessageTitleThirdColumn-button-edit:focus {
+    box-shadow: none !important;
+}
+.MessageTitleThirdColumn-button-add-contact {
+    background-color: white !important;
+    border:white!important;
+    color: #4699A7!important;
+}
+.MessageTitleThirdColumn-button-add-contact:focus {
+    box-shadow: none !important;
+}
+
+/* media-query */
+/* mobile-view */
+@media (max-width: 769px) {
+    /* MessageTitleThirdColumn-mobile styles */
+    .MessageTitleThirdColumn-position-mobile {
+        position: fixed; top: 3.9rem; width: 100%;
+    }
+    .MessageTitleThirdColumn-message-title-mobile {
+        background-color:  #4699A7;
+    }
+    .MessageTitleThirdColumn-nav-message-title{
+        border:  #4699A7 !important;
+    }
+    .MessageTitleThirdColumn-add-contact-icon {
+        color: #2B2425;
+    }
+    .MessageTitleThirdColumn-form-search-trd-column {
+        display:none;
+    }
+    .MessageTitleThirdColumn-button-edit {
+        background-color:  #4699A7 !important;
+        border:  solid #4699A7 !important;
+    }
+    .MessageTitleThirdColumn-button-add-contact {
+        background-color:  #4699A7 !important;
+        border:  solid #4699A7 !important;
+    }
+}
