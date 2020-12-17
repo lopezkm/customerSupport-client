@@ -1,7 +1,7 @@
 import React from 'react';
-import HeaderSecondColumn from './HeaderSecondColumn';
-import SidebarFirstColumn from './SidebarFirstColumn';
-import '../Styles/Styles.css';
+import HeaderSecondColumn from '../desktop_view/HeaderSecondColumn';
+import SidebarFirstColumn from '../desktop_view/SidebarFirstColumn';
+import '../../Styles/Styles.css';
 
 export default function SettingsMobile()  {
 

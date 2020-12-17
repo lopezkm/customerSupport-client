@@ -1,7 +1,7 @@
 import React, { useState, useLayoutEffect } from 'react';
-import ConversationSecondColumn from './ConversationSecondColumn';
+import ConversationSecondColumn from '../desktop_view/ConversationSecondColumn';
 import Sheet from 'react-modal-sheet';
-import '../Styles/Styles.css';
+import '../../Styles/Styles.css';
  
 export default function DropUpMovile() {
 

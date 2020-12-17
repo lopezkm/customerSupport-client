@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import NewContactModal from './NewContactModal';
-import NewConversationModal from './NewConversationModal';
+import NewContactModal from '../NewContactModal';
+import NewConversationModal from '../NewConversationModal';
 import { Tab, Nav, Button, Form, InputGroup, FormControl, Modal } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faPlusCircle } from '@fortawesome/free-solid-svg-icons';
 import { faEdit } from '@fortawesome/free-regular-svg-icons';
-import '../Styles/Styles.css';
+import '../../Styles/Styles.css';
 
 const CONVERSATIONS_KEY = 'conversations';
 const CONTACTS_KEY = 'contacts';

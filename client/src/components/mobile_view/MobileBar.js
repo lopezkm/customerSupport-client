@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCommentDots, faEllipsisH, faUser, faUsers } from '@fortawesome/free-solid-svg-icons';
 import DropUpMobile from './DropUpMobile';
-import '../Styles/Styles.css';
+import '../../Styles/Styles.css';
 
 export default function MobileBar() {
   

@@ -1,12 +1,12 @@
 import React from 'react';
-import SidebarFirstColumn from './SidebarFirstColumn';
-import HeaderSecondColumn from './HeaderSecondColumn';
-import ConversationSecondColumn from './ConversationSecondColumn';
-import TeammatesTitleSecondColumn from './TeammatesTitleSecondColumn';
-import TeammatesSecondColumn from './TeammatesSecondColumn';
-import HeaderThirdColumn from './HeaderThirdColumn';
-import MessageTitleThirdColumn from './MessageTitleThirdColumn';
-import ConversationListThirdColumn from './ConversationListThirdColumn';
+import SidebarFirstColumn from './desktop_view/SidebarFirstColumn';
+import HeaderSecondColumn from './desktop_view/HeaderSecondColumn';
+import ConversationSecondColumn from './desktop_view/ConversationSecondColumn';
+import TeammatesTitleSecondColumn from './desktop_view/TeammatesTitleSecondColumn';
+import TeammatesSecondColumn from './desktop_view/TeammatesSecondColumn';
+import HeaderThirdColumn from './desktop_view/HeaderThirdColumn';
+import MessageTitleThirdColumn from './desktop_view/MessageTitleThirdColumn';
+import ConversationListThirdColumn from './desktop_view/ConversationListThirdColumn';
 import '../Styles/Styles.css';
 
 

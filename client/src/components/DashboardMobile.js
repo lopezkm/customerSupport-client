@@ -1,13 +1,13 @@
 import React from 'react';
 import { useConversations } from '../contexts/ConversationsProvider';
 import { Route } from 'react-router-dom';
-import MobileBar from './MobileBar';
-import ContactConversationsMobile from './ContactConversationsMobile';
-import ContactConverstaionsSearchMobile from './ContactConverstaionsSearchMobile';
-import SettingsMobile from './SettingsMobile';
-import TeammatesMobile from './TeammatesMobile';
-import TeammatesSearchMobile from './TeammatesSearchMobile';
-import ChatAreaMobile from './ChatAreaMobile';
+import MobileBar from './mobile_view/MobileBar';
+import ContactConversationsMobile from './mobile_view/ContactConversationsMobile';
+import ContactConverstaionsSearchMobile from './mobile_view/ContactConverstaionsSearchMobile';
+import SettingsMobile from './mobile_view/SettingsMobile';
+import TeammatesMobile from './mobile_view/TeammatesMobile';
+import TeammatesSearchMobile from './mobile_view/TeammatesSearchMobile';
+import ChatAreaMobile from './mobile_view/ChatAreaMobile';
 import '../Styles/Styles.css';
 
 export default function DashboardMobile({ id }) {

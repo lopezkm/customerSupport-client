@@ -1,6 +1,6 @@
 import React from 'react';
 import { Form } from 'react-bootstrap';
-import '../Styles/Styles.css';
+import '../../Styles/Styles.css';
 
 export default function HeaderThirdColumn()  {
 

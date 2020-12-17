@@ -3,7 +3,7 @@ import { Button, Form, InputGroup, FormControl } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faSearch} from '@fortawesome/free-solid-svg-icons';
-import '../Styles/Styles.css';
+import '../../Styles/Styles.css';
 
 export default function HeaderFucntionalSearchTeammatesMobile()  {
 

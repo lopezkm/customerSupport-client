@@ -1,8 +1,8 @@
 import React from 'react';
 import HeaderFucntionalSearchConversationsMobile from './HeaderFucntionalSearchConversationsMobile';
-import MessageTitleThirdColumn from './MessageTitleThirdColumn';
-import ConversationListThirdColumn from './ConversationListThirdColumn';
-import '../Styles/Styles.css';
+import MessageTitleThirdColumn from '../desktop_view/MessageTitleThirdColumn';
+import ConversationListThirdColumn from '../desktop_view/ConversationListThirdColumn';
+import '../../Styles/Styles.css';
 
 export default function ContactConversationsMobile()  {
 

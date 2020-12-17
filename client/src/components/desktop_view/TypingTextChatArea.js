@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { Form, InputGroup, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGrinTongueWink, faMicrophone, faPaperclip, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
-import { useConversations } from '../contexts/ConversationsProvider';
-import '../Styles/Styles.css';
+import { useConversations } from '../../contexts/ConversationsProvider';
+import '../../Styles/Styles.css';
 
 export default function TypingTextChatArea()  {
 
