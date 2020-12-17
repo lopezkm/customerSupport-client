@@ -15,7 +15,7 @@ export default function Sidebar({ id }) {
   return (
     <div className="d-flex flex-row">
       <SidebarFirstColumn/>
-      <div className="d-flex flex-column sidebar-second-column">
+      <div className="d-flex flex-column Sidebar-second-column">
         <HeaderSecondColumn/>
         <ConversationSecondColumn/>
         <TeammatesTitleSecondColumn/>

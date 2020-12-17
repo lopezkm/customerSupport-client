@@ -11,7 +11,7 @@ export default function HeaderOpenConversation()  {
             <FontAwesomeIcon icon={faStopwatch} className="mr-3"/>
             <FontAwesomeIcon icon={faPhoneAlt} className="mr-3"/>
             </div>
-            <div className="contact-picture mr-2 rounded"></div>
+            <div className="ActiveContactChat-contact-picture mr-2 rounded"></div>
             <div>Jessica Grill</div>
         </div>
     )

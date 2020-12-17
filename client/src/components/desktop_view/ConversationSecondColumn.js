@@ -19,26 +19,26 @@ export default function ConversationSecondColumn()  {
 
     return (
         <div className="d-flex flex-column">
-            <span className="conversation-title">Conversation</span>
-            <div className="mx-3 p-1 rounded div-under-convesation">
+            <span className="ConversationSecondColumn-title">Conversation</span>
+            <div className="mx-3 p-1 rounded ConversationSecondColumn-container">
                 <div className="pl-2 pr-1 py-1 d-flex justify-content-between align-items-center">
-                    <div className="container-text-dropUp d-flex align-items-center">
-                        <FontAwesomeIcon icon={faUser} className="conversation-icon"/>
-                        <div className="text-dropUp ml-2 small text-white">You</div>
+                    <div className="ConversationSecondColumn-container-text-dropUp d-flex align-items-center">
+                        <FontAwesomeIcon icon={faUser} className="ConversationSecondColumn-icon"/>
+                        <div className="ConversationSecondColumn-text-dropUp ml-2 small text-white">You</div>
                     </div>
                     <Form.Check type={size[0] > 769 ? "checkbox" : "radio"} label="" />
                 </div>
                 <div className="pl-2 pr-1 py-1 d-flex justify-content-between align-items-center">
-                    <div className="container-text-dropUp d-flex align-items-center">
-                        <FontAwesomeIcon icon={faTasks} className="conversation-icon"/>
-                        <div className="text-dropUp ml-2 small text-white">Unassigned</div>
+                    <div className="ConversationSecondColumn-container-text-dropUp d-flex align-items-center">
+                        <FontAwesomeIcon icon={faTasks} className="ConversationSecondColumn-icon"/>
+                        <div className="ConversationSecondColumn-text-dropUp ml-2 small text-white">Unassigned</div>
                     </div>
                     <Form.Check type={size[0] > 769 ? "checkbox" : "radio"} label="" />
                 </div>
                 <div className="pl-2 pr-1 py-1 d-flex justify-content-between align-items-center">
-                    <div className="container-text-dropUp d-flex align-items-center">
-                        <FontAwesomeIcon icon={faUserFriends} className="conversation-icon" />
-                        <div className="text-dropUp ml-2 small text-white">All</div>
+                    <div className="ConversationSecondColumn-container-text-dropUp d-flex align-items-center">
+                        <FontAwesomeIcon icon={faUserFriends} className="ConversationSecondColumn-icon" />
+                        <div className="ConversationSecondColumn-text-dropUp ml-2 small text-white">All</div>
                     </div>
                     <Form.Check type={size[0] > 769 ? "checkbox" : "radio"} label="" />
                 </div>

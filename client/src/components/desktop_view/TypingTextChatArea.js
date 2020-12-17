@@ -21,15 +21,15 @@ export default function TypingTextChatArea()  {
     }
 
     return (
-        <Form  className="typing-chat-container" onSubmit={handleSubmit}>
-            <Form.Group className="typing-form-group">
+        <Form  className="TypingTextChatArea-container" onSubmit={handleSubmit}>
+            <Form.Group className="TypingTextChatArea-form-group">
                 <InputGroup>
                     <InputGroup.Prepend >
-                        <Button className="button-clip-and-mic">
+                        <Button className="TypingTextChatArea-button-clip-and-mic">
                             <FontAwesomeIcon icon={faGrinTongueWink} />
                         </Button>
                     </InputGroup.Prepend>
-                    <Form.Control className="input-enter-message"
+                    <Form.Control className="TypingTextChatArea-input-enter-message"
                     id="textArea"
                     as="textarea"
                     required
@@ -39,16 +39,16 @@ export default function TypingTextChatArea()  {
                     placeholder="Enter your message here..."
                     />
                     <InputGroup.Append >
-                        <Button className="button-clip-and-mic">
+                        <Button className="TypingTextChatArea-button-clip-and-mic">
                             <FontAwesomeIcon icon={faMicrophone} />
                         </Button>
                     </InputGroup.Append>
                     <InputGroup.Append >
-                        <Button className="rounded-right button-clip-and-mic">
+                        <Button className="rounded-right TypingTextChatArea-button-clip-and-mic">
                             <FontAwesomeIcon icon={faPaperclip} />
                         </Button>
                     </InputGroup.Append>
-                    <Button className="button-send ml-2" type="submit">
+                    <Button className="TypingTextChatArea-button-send ml-2" type="submit">
                         <FontAwesomeIcon icon={faPaperPlane} />
                     </Button>
                 </InputGroup>

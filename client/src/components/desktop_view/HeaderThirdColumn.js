@@ -6,7 +6,7 @@ export default function HeaderThirdColumn()  {
 
     return (
         <div className="d-flex justify-content-between p-3 align-items-center border-bottom">
-          <span className="span-you pt-1 pl-2">You</span>
+          <span className="HeaderThirdColumn-span-you pt-1 pl-2">You</span>
           <Form.Switch
             type="switch"
             id="switch-you"

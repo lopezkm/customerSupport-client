@@ -6,19 +6,19 @@ import '../../Styles/Styles.css';
 export default function ActiveContactChat()  {
 
     return (
-      <div className="active-contact-chat-container d-flex flex-row justify-content-between align-items-center">
+      <div className="ActiveContactChat-container d-flex flex-row justify-content-between align-items-center">
         <div className="d-flex flex-row align-items-center">
-          <div className="contact-picture"></div>
-          <FontAwesomeIcon icon={faArrowLeft} className="active-chat-arrow-icon"/>
+          <div className="ActiveContactChat-contact-picture"></div>
+          <FontAwesomeIcon icon={faArrowLeft} className="ActiveContactChat-arrow-icon"/>
           <div>
-            <div className="contact-name-chat">Lisa Westfall</div>
-            <div className="small-status d-flex align-items-center">
-              <FontAwesomeIcon icon={faCircle} className="small-icon"/>
+            <div className="ActiveContactChat-contact-name">Lisa Westfall</div>
+            <div className="ActiveContactChat-status d-flex align-items-center">
+              <FontAwesomeIcon icon={faCircle} className="ActiveContactChat-icon"/>
               <span>Active Now</span>
             </div>
           </div>
         </div>
-        <FontAwesomeIcon icon={faEllipsisV} className="vertical-dots-icon"/>
+        <FontAwesomeIcon icon={faEllipsisV} className="ActiveContactChat-vertical-dots-icon"/>
       </div>
     )
 }

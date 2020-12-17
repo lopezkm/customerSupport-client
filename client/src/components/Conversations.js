@@ -15,17 +15,17 @@ export default function Conversations() {
           active={conversation.selected}>
             <div className="pr-2 pb-1 d-flex justify-content-between align-items-start">
               <div className="d-flex align-items-start">
-                <div className="contact-picture-messages rounded mt-2 ml-2"></div>
+                <div className="Conversations-contact-picture-messages rounded mt-2 ml-2"></div>
                 <div className="d-flex flex-column align-items-start mt-0">
                   <div className="ml-2 text-black">
                     {conversation.recipients.map(r => r.name).join(', ')}
                   </div>
-                  <span className="ml-2 span-messages-text">
+                  <span className="ml-2 Conversations-span-messages-text">
                     Lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum, lorem ipsum
                   </span>
                 </div>
               </div>
-              <span className="span-messages pt-1">5m ago</span>
+              <span className="Conversations-span-messages  pt-1">5m ago</span>
             </div>
           </div>
       ))}

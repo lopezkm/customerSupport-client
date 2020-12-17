@@ -8,7 +8,7 @@ const CONVERSATIONS_KEY = 'conversations';
 export default function ConversationListThirdColumn()  {
 
     return (
-        <div className="rounded overflow-auto conversation-list-third-column-height">
+        <div className="rounded overflow-auto ConversationListThirdColumn-size">
           <Tab.Container activeKey={CONVERSATIONS_KEY}>
             <Tab.Content className="border-right">
               <Tab.Pane eventKey={CONVERSATIONS_KEY}>
